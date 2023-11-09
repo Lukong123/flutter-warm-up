@@ -60,6 +60,8 @@ class _LoginState extends State<Login> {
               fit: BoxFit.fill,
               width: width,
             ),
+            // Image.asset("assets/images/whitebg.jpg",
+            // ),
             Positioned(
               bottom: 0,
               top: 50,
@@ -174,7 +176,7 @@ class _LoginState extends State<Login> {
                           onPressed: () {
                           },
                           child: Text(
-                            'Forget Password ?',
+                            'Forgot Password ?',
                             textAlign: TextAlign.end,
                             style: hintStyle,
                           ),
