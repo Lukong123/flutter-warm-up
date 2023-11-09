@@ -245,42 +245,4 @@ class _LoginState extends State<Login> {
     );
   }
 
-  showDialogBox() => showCupertinoDialog<String>(
-        context: context,
-        builder: (BuildContext context) => CupertinoAlertDialog(
-          title: const Text(
-            'No Connection!',
-            style: TextStyle(
-              color: Colors.redAccent,
-              fontFamily: 'Quicksand',
-              fontWeight: FontWeight.w500,
-              fontSize: 18,
-            ),
-          ),
-          content: const Text(
-            'Please check your internet connectivity',
-            style: TextStyle(
-              fontFamily: 'Quicksand',
-              fontWeight: FontWeight.w400,
-              fontSize: 16,
-            ),
-          ),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () {
-                
-              },
-              child: const Text(
-                'OK',
-                style: TextStyle(
-                  color: primaryColor,
-                  fontFamily: 'Quicksand',
-                  fontWeight: FontWeight.w500,
-                  fontSize: 18,
-                ),
-              ),
-            ),
-          ],
-        ),
-      );
 }

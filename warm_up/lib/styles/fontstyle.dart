@@ -21,7 +21,3 @@ TextStyle titleStyle1 = TextStyle(
   fontSize: 18,
   fontWeight: FontWeight.w500,
 );
-TextStyle itemStyle = TextStyle(
-  fontSize: 16,
-  fontWeight: FontWeight.w400,
-);

@@ -24,6 +24,8 @@ class _DashboardState extends State<Dashboard> {
     return  Scaffold(
       appBar: AppBar(
         title: Text("Dashboard"),
+        backgroundColor: primaryColor,
+        
       ),
       body: Column(
         children: [
@@ -50,7 +52,7 @@ class _DashboardState extends State<Dashboard> {
       SizedBox(width: 15),
       SizedBox( 
         width: 70,
-        height: 70,
+        height: 60,
         child: FittedBox(
           child: FloatingActionButton( 
             backgroundColor: lightpink,
@@ -66,8 +68,8 @@ class _DashboardState extends State<Dashboard> {
       SizedBox(width: 15),
         
        SizedBox( 
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
         child: FittedBox(
           child: FloatingActionButton( 
             backgroundColor: lightorange,
@@ -83,8 +85,8 @@ class _DashboardState extends State<Dashboard> {
       SizedBox(width: 15),
 
       SizedBox( 
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
         child: FittedBox(
           child: FloatingActionButton( 
             backgroundColor: lightblue,
@@ -145,7 +147,10 @@ class _DashboardState extends State<Dashboard> {
                   Text("TOTAL"),
                   Text("REVENUE"),
                   SizedBox(height: 5),
-                  Text("120 000 FCFA")
+                  Text("120 000 FCFA",
+                   style: TextStyle(
+                    color: primaryColor
+                  ))
                 ]
               )))),
               SizedBox(width: 60),
@@ -163,7 +168,10 @@ class _DashboardState extends State<Dashboard> {
                   Text("TOTAL"),
                   Text("PROFIT"),
                   SizedBox(height: 5),
-                  Text("120 000 FCFA")
+                  Text("120 000 FCFA",
+                  style: TextStyle(
+                    color: primaryColor
+                  ))
                 ]
               ))))
              ]
@@ -172,35 +180,93 @@ class _DashboardState extends State<Dashboard> {
           Column(
             // The complex Column
             children: [
-              SizedBox(height: 60),
-              Text("Recent Orders"),
+              SizedBox(height: 40),
+              Text("Recent Orders", 
+              style: TextStyle(fontWeight: FontWeight.bold,
+              fontSize: 17,
+              ),),
               Row(
                 children: [
-                  SizedBox(width: 5),
+                  SizedBox(width: 10),
                   SizedBox( 
-        width: 55,
-        height: 55,
+        width: 45,
+        height: 45,
         child: FittedBox(
           child: FloatingActionButton( 
-            backgroundColor: lightgreen,
+            backgroundColor: lightgrey,
             onPressed: () {},
             child: Icon(
               Icons.person,
               size: 35,
-              color: Colors.green,
+              color: Colors.purple,
             ),
           ),
         ),
       ),  
+                      SizedBox(width: 30),
+
                   Column(
                     children: [
-                      Text("Perfume Order Classics"),
-                      Text("Alice Bruce. Stripe. #550000. Nov 9"),
+                      Text("Fragrance Classics", 
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                      SizedBox(height: 5),
+                      
+                      Text("Kelav F. #7000. Nov 9",
+                      style: TextStyle(color: Colors.blueGrey, fontSize: 12, fontWeight: FontWeight.bold),
+                      ),
                     ],
                   ),
-                  Text("33000 FCFA ")
+                  SizedBox(width: 30),
+                  Text("83000 FCFA ", 
+                  style: TextStyle(
+                    color: primaryColor,
+                    fontWeight: FontWeight.bold
+                  ))
                 ],
               ),
+
+              SizedBox(height: 19),
+
+              Row(
+                children: [
+                  SizedBox(width: 10),
+                  SizedBox( 
+        width: 45,
+        height: 45,
+        child: FittedBox(
+          child: FloatingActionButton( 
+            backgroundColor: lightgrey,
+            onPressed: () {},
+            child: Icon(
+              Icons.person,
+              size: 35,
+              color: Colors.blueGrey,
+            ),
+          ),
+        ),
+      ),  
+                      SizedBox(width: 30),
+
+                  Column(
+                    children: [
+                      Text("Perfume Order", 
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                      SizedBox(height: 5),
+                      
+                      Text("Alice D. #5000. Nov 9",
+                      style: TextStyle(color: Colors.blueGrey, fontSize: 12, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                  SizedBox(width: 30),
+                  Text("33000 FCFA ", 
+                  style: TextStyle(
+                    color: primaryColor,
+                    fontWeight: FontWeight.bold
+                  ))
+                ],
+              ),
+
 
             ],
           ),
